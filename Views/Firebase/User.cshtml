@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Firebase Users Record Management";
+    @model Firebase_a.Models.User;
+}
+
+<div class="text-center">
+    <h5 class="display-5">Let's manage users records</h5>
+
+  <div class="row">
+        <div class="col-md-12">
+            <h3>Add User</h3>
+            @using (Html.BeginForm("User","Firebase",FormMethod.Post))
+            {
+                 <div class="form-group">
+                    <label for="firstName">First Name</label>                                         
+                    @Html.TextBoxFor(a=>a.firstName,new{@class="form-control",@id="firstName", aria_describedby="firstNameHelp", @placeholder="First Name"})
+                    <small id="firstNameHelp" class="form-text text-muted">Write your first name.</small>
+                </div>
+               <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    @Html.TextBoxFor(a=>a.lastName,new{@class="form-control",@id="lastName", aria_describedby="lastNameHelp", @placeholder="Last Name"})
+                    <small id="lastNameHelp" class="form-text text-muted">Write your last name.</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            }
+            @using (Html.BeginForm("UserDelete","Firebase",new{@id=ViewBag.ItemID}))
+            {
+                <button type="submit" class="btn btn-danger">Delete</button> 
+            }
+        </div>
+    </div>
+</div>

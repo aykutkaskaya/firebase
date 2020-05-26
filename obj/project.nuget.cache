@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JyLbsWQ8/4n7Xa8qLMMGm62g99UWdMJl0GMIaHNGBgq8TZf+nlFG0nFlRaHsWJZv6YUG+kWiFF+066GxjUg1Vg==",
+  "success": true,
+  "projectFilePath": "/Users/aykut/Desktop/Firebase-a/Firebase-a.csproj",
+  "expectedPackageFiles": [
+    "/Users/aykut/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
